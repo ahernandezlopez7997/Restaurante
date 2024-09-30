@@ -1,10 +1,8 @@
-package com.example.restaurante;
+package com.example.restaurante.modelos;
 
 
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.time.LocalDate; // Import the LocalDate class
 
 @Entity
 @Table(name = "cliente",schema = "restaurante", catalog = "postgres")
