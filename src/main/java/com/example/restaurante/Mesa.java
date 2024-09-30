@@ -6,7 +6,7 @@ import lombok.*;
 import java.time.LocalDate; // Import the LocalDate class
 
 @Entity
-@Table(name = "mesa",schema = "Sabores_de_casa", catalog = "postgres")
+@Table(name = "mesa",schema = "restaurante", catalog = "postgres")
 @Getter
 @Setter
 @ToString
