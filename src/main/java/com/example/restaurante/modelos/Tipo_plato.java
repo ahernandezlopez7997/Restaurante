@@ -18,7 +18,7 @@ public class Tipo_plato {
     private Integer id;
 
     @Column(name = "tipo", nullable = false)
-    private Integer tipo;
+    private String tipo;
 
     @Column(name = "precio")
     private Double precio;

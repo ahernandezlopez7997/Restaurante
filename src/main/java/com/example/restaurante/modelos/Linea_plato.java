@@ -20,9 +20,6 @@ public class Linea_plato {
     @Column(name = "cantidad", nullable = false)
     private Integer cantidad;
 
-    @Column(name = "precio")
-    private Double precio;
-
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_plato", nullable = false)
     private Plato idPlato;

@@ -12,6 +12,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
     //JPA Interface select * from cliente where dni = "" and nombre like '% %'
 
-    List<Cliente> findAllByDniEquals(String dni, String nombre);
+    List<Cliente> findAllByDniEquals(String dni);
 
 }

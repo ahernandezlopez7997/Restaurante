@@ -23,7 +23,7 @@ public class Cliente {
     @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "apellido")
+    @Column(name = "apellidos")
     private String apellido;
 
     @Column(name = "email")

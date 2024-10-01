@@ -20,9 +20,6 @@ public class Linea_bebida {
     @Column(name = "cantidad", nullable = false)
     private Integer cantidad;
 
-    @Column(name = "precio")
-    private Double precio;
-
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_bebida", nullable = false)
     private Bebida idBebida;
