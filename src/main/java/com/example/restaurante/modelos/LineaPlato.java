@@ -4,14 +4,14 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "linea_bebida",schema = "restaurante", catalog = "postgres")
+@Table(name = "linea_plato",schema = "restaurante", catalog = "postgres")
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class Linea_bebida {
+public class LineaPlato {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
@@ -21,11 +21,15 @@ public class Linea_bebida {
     private Integer cantidad;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "id_bebida", nullable = false)
-    private Bebida idBebida;
+    @JoinColumn(name = "id_plato", nullable = false)
+    private Plato idPlato;
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_pedido", nullable = false)
     private Pedido idPedido;
+
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "id_tipo_plato", nullable = false)
+    private TipoPlato idTipoPlato;
 
 }

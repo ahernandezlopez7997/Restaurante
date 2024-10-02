@@ -2,9 +2,7 @@ package com.example.restaurante.servicios;
 
 import com.example.restaurante.modelos.Cliente;
 import com.example.restaurante.repositorios.ClienteRepository;
-import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -38,7 +36,7 @@ public class ClienteService {
      * Busca un cliente por id
      */
 
-    public Cliente getById(int id){
+    public Cliente getById(Integer id){
         return clienteRepository.findById(id).orElse(null);
     }
 
@@ -54,7 +52,7 @@ public class ClienteService {
      * Elimina una empresa por id
      */
 
-    public void eliminar(int id){
+    public void eliminar(Integer id){
         clienteRepository.deleteById(id);
     }
 
@@ -62,7 +60,8 @@ public class ClienteService {
      * Elimina una empresa
      */
 
-    public void eliminar(Cliente cliente){
-        clienteRepository.delete(cliente);
-    }
+//    public void eliminar(Cliente cliente){
+//        clienteRepository.delete(cliente);
+//    }
+
 }

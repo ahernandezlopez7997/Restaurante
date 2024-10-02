@@ -25,6 +25,6 @@ public class Plato {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "id_tipo_plato", nullable = false)
-    private Tipo_plato idTipoPlato;
+    private TipoPlato idTipoPlato;
 
 }
